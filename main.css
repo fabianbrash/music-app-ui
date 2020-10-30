@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: #EEE;
+}
+
+.fb-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.app-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* We are using a width of 414px because we are using the iPhone as our base*/
+.player {
+    background-color: #FFF;
+    padding: 100px 50px;
+    width: 414px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+
+}
+
+.song-img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color: #FE4880;
+
+    width: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+
+    margin-bottom: 50px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/Machine-Gun-Kelly-Forget-Me-Too-still-billboard-1548-1603389806-1024x677.jpg');
+}
+
+.song-img:after {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.song-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border: 2px dashed #EEE;
+    border-radius: 50%;
+}
+
+.song-details {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.song-details h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #313131;
+    margin-bottom: 5px;
+}
+
+.song-details h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #888;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.player-controls .play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #FE4880;
+    color: #FFF;
+    margin: 0px 30px;
+
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+
+    box-shadow: 0px 6px 12px rgba(254, 72, 128, 0.6);
+    transition: 0.4s ease;
+}
+
+.player-controls .play-btn:hover {
+    box-shadow: 0px 8px 16px rgba(254, 72, 128, 0.8);
+}
+
+.player-controls .skip-btn {
+    background: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    color: #CCC;
+    transition: 0.4s ease;
+}
+
+.player-controls .skip-btn:hover {
+    color: #888;
+}
+
+.next-up p {
+    color: #888;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.next-up p span {
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media (max-width: 414px) {
+    .player {
+        min-height: 100vh;
+        border-radius: 0px;
+        padding: 75px 30px;
+    }
+}
