@@ -40,7 +40,7 @@ body {
     position: relative;
     display: block;
     margin: 0 auto;
-    background-color: #FE4880;
+    /*background-color: #FE4880;*/
 
     width: 200px;
     max-width: 100%;
@@ -52,7 +52,10 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('./images/Machine-Gun-Kelly-Forget-Me-Too-still-billboard-1548-1603389806-1024x677.jpg');
+    /*background-image: url('./images/Machine-Gun-Kelly-Forget-Me-Too-still-billboard-1548-1603389806-1024x677.jpg');*/
+
+    transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
 }
 
 .song-img:after {
